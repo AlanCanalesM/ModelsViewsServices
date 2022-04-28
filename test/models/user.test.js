@@ -26,5 +26,16 @@ describe("I´m testing the class user", ()=>{
 
     })
 
+    test("Case 3: testing setters", ()=>{
+
+        const User=new user(2,"AlanCanalesM", "Alan", "I´m a student of software engineering")
+
+        User.setUsername("Pedro")
+        User.setBio("Student")
+        expect(User.getUsername()).toBe("Pedro")
+        expect(User.getBio()).toBe("Student")
+        
+    })
+
 
 })
