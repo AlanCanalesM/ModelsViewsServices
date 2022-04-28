@@ -1,4 +1,4 @@
-const user=require("./../app/user")
+const user=require("../../app/models/user")
 
 describe("I´m testing the class user", ()=>{
 
