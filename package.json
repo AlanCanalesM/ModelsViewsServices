@@ -1,0 +1,11 @@
+{
+  "name": "mvs",
+  "version": "1.0.0",
+  "description": "This is a project about Models Views and Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alan Canales",
+  "license": "ISC"
+}
