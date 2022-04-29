@@ -28,5 +28,14 @@ describe("Testing for the UserService class", ()=>{
 
     })
 
+    test("Case 3 update username",()=>{
+
+
+        const user=userService.create(1,"AlanCanalesM", "Alan")
+        userService.updateUserName(user, "ArturoCanalesM")
+        expect(user.name).toBe("ArturoCanalesM")
+
+    })
+
 
 })

@@ -21,6 +21,13 @@ class userService{
 
 
     }
+    
+    static updateUserName(user, name){
+
+        user.name=name
+        
+    }
+
 
     
 }
