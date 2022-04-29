@@ -37,5 +37,18 @@ describe("Testing for the UserService class", ()=>{
 
     })
 
+    test("Case 4 given a list of users give me the list of usernames",()=>{
+
+        const user1= userService.create(2, "AlanC1", "Alan")
+        const user2= userService.create(3, "AlanC2", "Alan")
+        const user3= userService.create(4, "AlanC3", "Alan")
+
+        const userNames= userService.getAllUsernames([user1, user2, user3])
+
+        expect(userNames).toContain("AlanC1")
+        expect(userNames).toContain("AlanC2")
+        expect(userNames).toContain("AlanC3")
+    })
+
 
 })

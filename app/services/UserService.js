@@ -5,7 +5,7 @@ class userService{
 
     static create(id, username, name){
 
-       return new user(1, "AlanCanalesM", "Alan", "Without Bio")
+       return new user(id, username, name, "Without Bio")
 
     }
 
@@ -25,7 +25,19 @@ class userService{
     static updateUserName(user, name){
 
         user.name=name
-        
+
+    }
+
+    static getAllUsernames(usuarios){
+
+        const usernames=[]
+
+        usernames.push(usuarios[0].username)
+        usernames.push(usuarios[1].username)
+        usernames.push(usuarios[2].username)
+
+        return (usernames)
+
     }
 
 
