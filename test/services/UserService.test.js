@@ -15,5 +15,18 @@ describe("Testing for the UserService class", ()=>{
 
     })
 
+    test("Case 2 get all user data in a list", ()=>{
+
+        const user = userService.create(1, "AlanCanalesM", "Alan")
+        const dataUser = userService.getInfo(user)
+        expect(dataUser[0]).toBe(1)
+        expect(dataUser[1]).toBe("AlanCanalesM")
+        expect(dataUser[2]).toBe("Alan")
+        expect(dataUser[3]).not.toBeUndefined()
+
+
+
+    })
+
 
 })

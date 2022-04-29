@@ -9,6 +9,19 @@ class userService{
 
     }
 
+    static getInfo(user){
+
+        const data=[]
+        data.push(user.id)
+        data.push(user.username)
+        data.push(user.name)
+        data.push(user.bio)
+
+        return (data)
+
+
+    }
+
     
 }
 
