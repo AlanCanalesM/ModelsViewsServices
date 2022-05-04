@@ -14,6 +14,18 @@ describe("Test for class UserView", ()=>{
 
     })
 
+    test("test 2 return an error when try create an user with invalid propierties", ()=>{
+
+
+        const payload ={username: null, name: "Alan", id: 2}
+        const result = userView.createUser(payload)
+
+        expect(result.error).toMatch("It need a valid value")
+
+
+
+    })
+
     
 
 
