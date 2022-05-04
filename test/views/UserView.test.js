@@ -26,6 +26,18 @@ describe("Test for class UserView", ()=>{
 
     })
 
+    test("test 3 create a valid user", ()=>{
+
+        const payload = {username:"AlanCanalesM", name:"Alan", id:1}
+
+        const result = userView.createUser(payload)
+
+        expect(result.id).toBe(1)
+        expect(result.username).toBe("AlanCanalesM")
+        expect(result.name).toBe("Alan")
+        
+    })
+
     
 
 
